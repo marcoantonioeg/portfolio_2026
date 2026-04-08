@@ -8,21 +8,20 @@ export const PORTFOLIO_INFO: Portfolio = {
     pdf: "/resume.pdf",
   },
   personal: {
-    name: "Satya Subudhi",
-    title: "Senior Engineer — Full Stack (Python & React)",
-    headline: "React · Python · FastAPI · IaC · Cloud",
+    name: "Hi! I'm Marco,",
+    title: "IT ENGINEER",
+    headline: "React.js · Mongo Db · Python · Next.Js · Node.js · Git · Tailwind CSS · Bootstrap · Figma",
     // avatar can be a string, an object with { url, label }, or an array of those.
     avatar: [
       // use public root path so Vite serves the static asset from /public/profile.jpg
-      { url: "./profile.jpg", label: "" },
-      { url: "./profile1.jpg", label: "" },
+      { url: "./profile.JPG", label: "" },
     ],
     summary:
-      "Senior Engineer with 7+ years of experience delivering enterprise-grade applications. Over the last 3 years I have focused on building production systems using Python (FastAPI) and React — designing APIs, building responsive frontends, and automating deployments with IaC. Experienced across AWS & Azure and comfortable owning full delivery from design to production.",
+      "An IT Engineer with experience in web development, hybrid applications, chatbots, networking, ServiceNow, AEM and telecommunications skills. Specializing in React.js",
     // optional hero summary used in the site hero; keeps a concise, senior-level intro tuned to your data
     hero: {
       summary:
-        "Senior Engineer & product-focused Full Stack developer (React, TypeScript, Python/FastAPI). I design resilient component systems, build production-grade APIs, and optimize for performance and accessibility — driving features from design through delivery on cloud platforms.",
+        "An IT Engineer with experience in web development, hybrid applications, chatbots, networking, ServiceNow, AEM and telecommunications skills. Specializing in React.js",
     },
     contact: {
       email: "satyasubudhi089@gmail.com",
@@ -418,14 +417,32 @@ export const PORTFOLIO_INFO: Portfolio = {
   ],
   projects: [
     {
-      id: "learn-algo",
-      title: "Learn Algo",
+      id: "nexio",
+      title: "Nexio",
       description:
-        "Interactive visualizations that transform abstract concepts into intuitive understanding. Watch sorting, searching, and ML algorithms execute step-by-step.",
-      tags: ["Algorithms", "DSA", "ML", "AI", "Visualization", "Next.js"],
+        "Owner / Full Stack Developer.",
+      tags: ["React.js", "Node.js", "Mongo DB"],
       image:
-        "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXpqYWFhbnBraWt3ZXhvajZsdjg5andyMGZzY2VibGg3bXE0MWxwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2PuPWxuLV1FGyh03Ja/giphy.gif",
-      href: "https://www.learn-algo.com",
+        "./nexio.png",
+      links: [
+        {
+          label: "GitHub",
+          url: "https://github.com/satya00089/learn-algo",
+          icon: "SiGithub",
+        },
+      ],
+      isUnderDevelopment: true,
+    },
+    {
+      id: "Montsechia",
+      title: "Montsechia",
+      description:
+        "Web Designer / Full Stack Developer.",
+      tags: ["React.js", "Node.js", "Stripe"],
+      image:
+        "./montsechia.png",
+        href: "https://montsechia.com.mx",
+
       links: [
         {
           label: "GitHub",
@@ -436,23 +453,17 @@ export const PORTFOLIO_INFO: Portfolio = {
       isUnderDevelopment: false,
     },
     {
-      id: "landing-zone-orchestrator",
-      title: "Landing Zone Orchestrator",
+      id: "96labs",
+      title: "96 Labs",
       description:
-        "A production-ready platform that transforms cloud infrastructure provisioning from manual IaC coding to an intuitive, form-driven workflow. Built with React, FastAPI, and MongoDB to generate validated Terraform templates for AWS, Azure, and GCP. Features include schema-driven form builder for VPC, Subnets, IAM, and networking resources, real-time Terraform code generation and validation, JWT-based authentication, MongoDB storage for projects and templates, and multi-cloud support.",
+        "Front End Developer.",
       tags: [
-        "Terraform",
-        "IaC",
-        "React",
-        "FastAPI",
-        "MongoDB",
-        "AWS",
-        "Azure",
-        "Full Stack",
+        "Wordpress"
       ],
       image:
-        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGtuYjY1emtsZmNjMXp1czdrdXR5bXE5ZDJheHVvZjY1azZxYnJieiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qzImRjQVb2OUI84mTt/giphy.gif",
-      href: "https://orchestrator.next-zen.dev",
+        "./labs.png",
+        href: "https://96labs.com/",
+
       links: [
         {
           label: "GitHub",
@@ -460,17 +471,38 @@ export const PORTFOLIO_INFO: Portfolio = {
           icon: "SiGithub",
         },
       ],
-      isUnderDevelopment: true,
+      isUnderDevelopment: false,
     },
     {
-      id: "diagrammatic",
-      title: "Diagrammatic",
+      id: "GatesConnect",
+      title: "Gates Connect",
       description:
-        "Diagrammatic (System Design Playground): A component library and living documentation for a design system.",
-      tags: ["System Design", "AI & ML", "React"],
+        "Front End Developer / AEM Developer.",
+      tags: [
+        "React.js", "AEM", "HTL"
+      ],
       image:
-        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTFnOGF3d3BodjFvY3NhanY5cnl5bmd4Z243aXB5M3hrOHg3d2tmeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WvzQektcJxs0oDFkHq/giphy.gif",
-      href: "https://diagrammatic.next-zen.dev",
+        "./gates.png",
+      href: "https://www.gatesconnect.com/us/en/login.html",
+      links: [
+        {
+          label: "GitHub",
+          url: "https://github.com/satya00089/landing-zone-orchestrator-ui",
+          icon: "SiGithub",
+        },
+      ],
+      isUnderDevelopment: false,
+    },
+  
+    {
+      id: "gruponeun",
+      title: "Grupo Neun",
+      description:
+        "Web Designer / Front End Developer.",
+      tags: ["HTML", "CSS", "JavaScript"],
+      image:
+        "./neun.png",
+      href: "https://gruponeun.com/",
       links: [
         {
           label: "GitHub",
@@ -480,14 +512,14 @@ export const PORTFOLIO_INFO: Portfolio = {
       ],
     },
     {
-      id: "tic-tac-toe-ai",
-      title: "Tic Tac Toe AI",
+      id: "grupoMexbridge",
+      title: "Grupo Mexbridge",
       description:
-        "A minimal Tic-Tac-Toe AI game built with Next.js to understand the Minimax algorithm.",
-      tags: ["Next.js", "AI", "Game", "Minimax"],
+        "Front End Developer.",
+      tags: ["HTML", "CSS", "JavaScript"],
       image:
-        "https://raw.githubusercontent.com/satya00089/tic-tac-toe/main/public/tic-tac-toe.png",
-      href: "https://satya00089.github.io/tic-tac-toe/",
+        "./mexbridge.png",
+      href: "http://grupomexbridge.com/",
       links: [
         {
           label: "GitHub",
@@ -498,18 +530,18 @@ export const PORTFOLIO_INFO: Portfolio = {
       isUnderDevelopment: false,
     },
     {
-      id: "mui-color-wheel",
-      title: "MUI Color Wheel",
+      id: "manifestivals",
+      title: "ManiFestivals",
       description:
-        "A Material-UI based color wheel component with real-time color picking.",
-      tags: ["React", "Material-UI", "NPM Package", "Storybook"],
+        "Front End Developer.",
+      tags: ["Wix", "JavaScript"],
       image:
-        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTJxYjhmdTVjam41aWlzczZreGZ2eXc5eThjdDRpMXgxYzVuYTAzMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tWnCyw4rmoFY8CmhLV/giphy.gif",
-      href: "https://mui-color-wheel.vercel.app/",
+        "./manifestival.png",
+      href: "https://www.manifestivals.com/",
       links: [
         {
           label: "Storybook",
-          url: "https://mui-color-wheel.vercel.app/",
+          url: "https://www.manifestivals.com/",
           icon: "SiStorybook",
         },
         {
@@ -525,51 +557,7 @@ export const PORTFOLIO_INFO: Portfolio = {
       ],
       isUnderDevelopment: true,
     },
-    {
-      id: "alochona",
-      title: "Alochona",
-      description:
-        "Alochona is an experimental chatbot hosted on Hugging Face Spaces. It uses OpenAI under the hood for responses. This project was built as a way to explore chatbot UIs, Hugging Face deployment, and integrating OpenAI APIs.",
-      image:
-        "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmc5dDY1c2ZnOGs0ODF0eDkwbzBvMHZ2ZXJvYml2amRmdzN2dnZueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7AFQj6uviWpwudbOWg/giphy.gif",
-      href: "https://huggingface.co/spaces/satya00089/alochona",
-      links: [
-        {
-          label: "Huggingface",
-          url: "https://huggingface.co/spaces/satya00089/alochona/tree/main",
-          icon: "SiHuggingface",
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/alochona",
-          icon: "SiGithub",
-        },
-      ],
-      tags: ["Chatbot", "OpenAI", "Hugging Face", "Beginner Project"],
-    },
-    {
-      id: "night-sky",
-      title: "Night Skyline",
-      description:
-        "A breathtaking recreation of the city skyline under a starlit night sky, capturing the serene beauty and glowing atmosphere of the evening.",
-      tags: ["React", "CSS"],
-      image:
-        "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2RjaHAxY3N3enY0d3RldWVpczg2ZTNzMHhsY2dpam0yYnp6bWh2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P2jddT5c9g9OeHI17p/giphy.gif",
-      href: "https://satya00089.github.io/night-sky",
-      links: [
-        {
-          label: "Watch",
-          url: "https://www.loom.com/share/1516014366e34135a67f5dd4e551fec5",
-          icon: "FaPlay",
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/satya00089/night-sky",
-          icon: "SiGithub",
-        },
-      ],
-      isUnderDevelopment: true,
-    },
+   
   ],
   education: [
     {

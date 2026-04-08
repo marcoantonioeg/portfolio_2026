@@ -29,7 +29,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
 
   useEffect(() => {
     try {
-      localStorage.setItem("theme", dark ? "dark" : "light");
+      localStorage.setItem("theme", dark ? "dark" : "dark");
     } catch (err) {
       // log errors when persisting theme
       // eslint-disable-next-line no-console

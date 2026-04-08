@@ -1,0 +1,38 @@
+.bg-header{
+background-image: url('../assets/desktop.png');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.bg-header-2{
+   background-image: url('../assets/desktop3.png');
+   background-position: center;
+   background-color: #000;
+   background-position-x: -400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 1s;
+}
+.services-img{
+   width: 900px;
+
+}
+   .coloramarillo {
+      color: #e9f922;
+    }
+    .gmail:hover {
+      scale: 1.1;
+      transition: all .2s;
+    }
+    .gmail {
+      cursor: pointer;
+      transition: all .2s;
+      width: 250px;
+    }
+
+    .bg-pic-3{
+   background-image: url('../assets/bg3.png');
+   background-position-x: right;
+   background-repeat: no-repeat;
+   background-size: contain;
+   }

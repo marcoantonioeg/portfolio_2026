@@ -1,5 +1,5 @@
 import { animate, motion } from "framer-motion";
-import { useMemo, useRef, useState, useLayoutEffect } from "react";
+import {  useRef, useState, useLayoutEffect } from "react";
 import { PORTFOLIO_INFO } from "../config/portfolioData";
 import type { AvatarItem } from "../types/portfolio";
 
@@ -10,7 +10,6 @@ export const About: React.FC = () => {
   const name = personal.name ?? "Your Name";
   const avatar = personal.avatar;
 
-  const features = useMemo(() => PORTFOLIO_INFO.highlights ?? [], []);
   const heroSummary =
     personal.hero?.summary ??
     personal.summary ??
@@ -274,31 +273,7 @@ export const About: React.FC = () => {
                   {heroSummary}
                 </motion.p>
 
-                <motion.ul
-                  variants={item}
-                  className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3"
-                >
-                  {features.map((f) => (
-                    <li key={f} className="flex items-start gap-3">
-                      <svg
-                        className="mt-1 w-5 h-5 text-foreground/80"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        aria-hidden
-                      >
-                        <path
-                          d="M5 12l4 4L19 6"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <span className="text-sm">{f}</span>
-                    </li>
-                  ))}
-                </motion.ul>
-
+            
                 <motion.div
                   variants={item}
                   className="mt-8 flex flex-wrap gap-3"
@@ -313,9 +288,9 @@ export const About: React.FC = () => {
                   </a>
 
                   <a
-                    href="/resume.pdf"
+                    href="./resume.pdf"
                     className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-3 text-sm font-semibold text-foreground hover:bg-muted"
-                    onKeyDown={(e) => handleKeyActivation(e, "/resume.pdf")}
+                    onKeyDown={(e) => handleKeyActivation(e, "./resume.pdf")}
                   >
                     Download resume
                   </a>
@@ -450,23 +425,7 @@ export const About: React.FC = () => {
               )}
             </div>
 
-            {/* Navigation dots (only when multiple images) */}
-            {carouselItems.length > 1 && (
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex justify-center gap-2">
-                {carouselItems.map((item, index) => (
-                  <button
-                    key={item.id}
-                    className={`h-2 rounded-full transition-all ${
-                      index === activeIndex
-                        ? "bg-foreground w-8"
-                        : "bg-foreground/30 hover:bg-foreground/50 w-2"
-                    }`}
-                    onClick={() => setActiveIndex(index)}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
-              </div>
-            )}
+         
           </motion.div>
         </motion.div>
       </div>

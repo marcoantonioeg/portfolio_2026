@@ -8,16 +8,13 @@ import {
   animate,
   useMotionTemplate,
 } from "framer-motion";
-import { PiSunDuotone, PiMoonDuotone } from "react-icons/pi";
-import { useTheme } from "../../context/ThemeContext";
+
 
 type NavLink = { href: string; label: string };
 
 export const Header: React.FC<{ links?: NavLink[]; onTryCLI?: () => void }> = ({
   links = [],
-  onTryCLI,
 }) => {
-  const { dark, toggle } = useTheme();
   const headerRef = useRef<HTMLElement | null>(null);
 
   const [active, setActive] = useState<string>(links[0]?.href ?? "#about");
@@ -141,21 +138,9 @@ export const Header: React.FC<{ links?: NavLink[]; onTryCLI?: () => void }> = ({
             })}
           </div>
 
-          <button
-            onClick={onTryCLI}
-            className="btn-light-flare sm:inline-flex items-center gap-2 px-3 py-1.5 rounded text-sm border border-[var(--border)] hover:bg-[var(--border)]/30 transition cursor-pointer"
-            aria-label="Try CLI"
-          >
-            Try CLI
-          </button>
+       
 
-          <button
-            onClick={toggle}
-            aria-label="Toggle color theme"
-            className="p-2 rounded-full border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--border)]/30 transition cursor-pointer"
-          >
-            {dark ? <PiSunDuotone size={22} /> : <PiMoonDuotone size={22} />}
-          </button>
+      
         </nav>
       </div>
     </motion.header>
